@@ -1,0 +1,498 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={财政学},
+  pdfauthor={谭皓文},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{ctex}
+
+%\usepackage{xltxtra} % XeLaTeX的一些额外符号
+% 设置中文字体
+%\setCJKmainfont[BoldFont={黑体},ItalicFont={楷体}]{新宋体}
+
+% 设置边距
+\usepackage{geometry}
+\geometry{%
+  left=2.0cm, right=2.0cm, top=3.5cm, bottom=2.5cm} 
+
+\usepackage{amsthm,mathrsfs}
+\usepackage{booktabs}
+\usepackage{longtable}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[style=apa,]{biblatex}
+
+\title{财政学}
+\author{谭皓文}
+\date{2021年8月31日}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{ux5bfcux8bba}{%
+\chapter{导论}\label{ux5bfcux8bba}}
+
+\hypertarget{ux516cux6c11ux4e0eux8d22ux653fux4e4bux95f4ux7684ux5173ux7cfb}{%
+\section{公民与财政之间的关系}\label{ux516cux6c11ux4e0eux8d22ux653fux4e4bux95f4ux7684ux5173ux7cfb}}
+
+\hypertarget{ux8d22ux653fux5bf9ux4e8eux516cux6c11ux4e2aux4f53ux7684ux4fddux969c}{%
+\subsection{财政对于公民个体的保障}\label{ux8d22ux653fux5bf9ux4e8eux516cux6c11ux4e2aux4f53ux7684ux4fddux969c}}
+
+这些保障体现为
+
+\begin{itemize}
+\tightlist
+\item
+  医疗保障
+\item
+  教育保障
+\item
+  充分就业保障、失业保障
+\item
+  养老保障
+\item
+  \ldots\ldots{}
+\end{itemize}
+
+\hypertarget{ux8d22ux653fux5bf9ux4e8eux516cux6c11ux6574ux4f53ux7684ux4fddux969c}{%
+\subsection{财政对于公民整体的保障}\label{ux8d22ux653fux5bf9ux4e8eux516cux6c11ux6574ux4f53ux7684ux4fddux969c}}
+
+\begin{itemize}
+\tightlist
+\item
+  国防
+\item
+  公共安全
+\item
+  行政管理
+\item
+  基础设施
+\item
+  \ldots\ldots{}
+\end{itemize}
+
+其中，国防与公共安全属于纯公共产品，\textbf{其特点：不直接付费}，而基础设施这些例如公共交通等，需要付费使用。
+
+\hypertarget{ux516cux6c11ux5bf9ux4e8eux8d22ux653fux7684ux8d21ux732e}{%
+\subsection{公民对于财政的贡献}\label{ux516cux6c11ux5bf9ux4e8eux8d22ux653fux7684ux8d21ux732e}}
+
+\begin{itemize}
+\tightlist
+\item
+  依法纳税
+\item
+  购买国债
+\end{itemize}
+
+\hypertarget{ux793eux4f1aux516cux5171ux9700ux8981ux4e0eux516cux5171ux4ea7ux54c1}{%
+\section{社会公共需要与公共产品}\label{ux793eux4f1aux516cux5171ux9700ux8981ux4e0eux516cux5171ux4ea7ux54c1}}
+
+\hypertarget{ux793eux4f1aux516cux5171ux9700ux8981}{%
+\subsection{社会公共需要}\label{ux793eux4f1aux516cux5171ux9700ux8981}}
+
+\textbf{社会公共需要含义}：区别于私人个别需要，由公共部门提供的，满足社会整体的需求；也是指社会成员在生产、生活和工作中的共同需要。这种需要是\textbf{每一个社会成员}都可以\textbf{无差别享受}的需要。
+
+\textbf{社会公共需要的特征}：
+
+\begin{itemize}
+\tightlist
+\item
+  社会公共的共同特征
+\item
+  均等性与福利性
+\item
+  与经济发展相适应
+\end{itemize}
+
+\hypertarget{ux516cux5171ux4ea7ux54c1}{%
+\subsection{公共产品}\label{ux516cux5171ux4ea7ux54c1}}
+
+\textbf{公共产品定义}：由公共部门提供的，满足社会公共需要的、具有非竞争性和非排他性的产品和服务。
+
+\begin{quote}
+公共物品能够通过政府行为有效率的供给
+\end{quote}
+
+\textbf{私人产品定义}：由市场供给的、满足个人需要的、具有竞争性和排他性的产品和服务。
+
+\begin{quote}
+私人物品可以通过市场有效率地加以分配
+\end{quote}
+
+\begin{quote}
+\textbf{排他性}：消费者为享用某种产品或者劳动付钱之后，其他人就不能享用此种产品或者劳务所带来的收益。
+
+\textbf{非排他性}：公共产品的消费是集体进行的、共同消费的，其效用在不同消费者之间不能分割。
+
+\textbf{竞争性}：某种产品或者劳务的消费者的增加会引起此种产品或劳务生产成本的增加。
+
+\textbf{非竞争性}：消费者的增加不会引起生产成本的增加，公共产品的边际成本几乎为0.也就是说任何消费者的消费不会影响其他消费者对它的消费。
+\end{quote}
+
+区分公共产品与私人产品的两个基本标准
+
+\begin{itemize}
+\tightlist
+\item
+  排他性与非排他性
+\item
+  竞争性与非竞争性
+\end{itemize}
+
+\textbf{公共产品的特征}：
+
+\begin{itemize}
+\tightlist
+\item
+  非排他性
+\item
+  非竞争性
+\end{itemize}
+
+\textbf{准公共产品（混合产品）}：同时具有公共产品与私人产品的特征
+
+\textbf{准公共产品（混合产品）}：包括两类；一类是具有非竞争性也具有排他性的商品（基础设施，例如桥梁），一类是具有竞争性与非排他性的产品（水利工程）。
+
+\textbf{共有资源}又称\textbf{公共财产产品}，这类产品具有竞争性而不存在排他性，例如在农业灌溉中，水资源的利用。
+
+\textbf{市场只适于提供私人产品，对于公共产品是失效的，公共产品只能由政府提供。}
+
+\begin{quote}
+对混合产品，既可以采取公共提供方式，也能采取混合提供方式。
+\end{quote}
+
+采取方式的选择方案：
+
+\begin{quote}
+具有非竞争性又具有排他性的第一类混合产品，成本有两种方式来弥补，一是政府税收补贴（此为公共提供方式），二是对过桥车辆收费（市场提供方式）。抉择方案，如果第一种方式的社会净效益（社会总效益-社会总成本）大，采取第一种方式；反之，则采取第二个。
+
+第二种产品，我们考虑外部效应，如果外部效应比较大，采取公共提供方式，如果外部效应不够明显，采取混合提供方式。
+\end{quote}
+
+\hypertarget{ux516cux5171ux90e8ux95e8}{%
+\subsection{公共部门}\label{ux516cux5171ux90e8ux95e8}}
+
+公共部门的活动范围：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  提供一种宏观经济与微观经济环境，这种经济环境为有效的经济活动设定正确的刺激机制
+\item
+  提供一种能使长期投资的机构性基础设施，即财产权、和平、法律以及秩序以及规则
+\item
+  确保提供基础教育、医疗保健以及经济活动所必需的物质基础设施。
+\end{enumerate}
+
+\hypertarget{ux516cux5171ux90e8ux95e8ux7684ux6d3bux52a8ux65b9ux5f0f}{%
+\subsubsection{公共部门的活动方式}\label{ux516cux5171ux90e8ux95e8ux7684ux6d3bux52a8ux65b9ux5f0f}}
+
+组织公共支出与收入构成了公共部门的主要活动方式。
+
+\begin{quote}
+公共支出：通过公共部门预算提供产品和服务的成本。公共支出实际上就是政府行为的成本。分为两类，一类是购买性支出，一类是转移性支出。
+购买性支出例子：对于经常性的商品和劳务的购买支出。
+转移性支出是指对于养老金的补贴、国债利息、失业救济金、价格补贴等等的支出。
+公共收入：征税、发现公债、国有经济的收入、国有资源的收入和行政事业收入等等
+\end{quote}
+
+\hypertarget{ux8d22ux653fux653fux7b56}{%
+\section{财政政策}\label{ux8d22ux653fux653fux7b56}}
+
+\textbf{财政的概念}
+
+国家凭借其政治力量，通过集中一部分社会财富来满足社会公共需要的收支活动，并通过这些收支活动调节社会总需求与总供给的平衡，以达到优化资源配置、公平分配、稳定和发展经济的目标。
+
+\begin{quote}
+政府统一进行资金管理，实现国家经济社会发展职能的分配关系。
+\end{quote}
+
+财政特点
+
+\begin{itemize}
+\tightlist
+\item
+  财政是以国家为主体的经济活动或分配活动。财政是伴随国家而产生的。\textbf{只有以政府为主的分配才是财政分配}
+\item
+  财政是满足一切社会公共需要的经济活动。财政对社会公共需要的满足是具有特定范围的：一是某些社会职能的需要；二是执行某些经济职能的需要；三是某些难以界定的社会公共需要，如各种补贴。
+\item
+  财政是国家凭借政权力量，强制分配一部分社会财富的机制
+\end{itemize}
+
+财政的构成要素：
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{分配主体}： 国家和政府
+\item
+  \textbf{分配对象}： 部分社会总产品和服务（即一部分国民收入）
+\item
+  \textbf{分配目的}： 满足社会公共需求
+\end{itemize}
+
+\begin{quote}
+完整的财政概念应该是一般属性与特殊属性的统一，一般属性的财政是国家为实现其职能，凭借政治权力参与一部分社会产品或者国民收入分配所进行的一系列活动以及形成的特殊分配关系。特殊属性的财政是指具体政治经济制度相适应的公共财政模式。
+\end{quote}
+
+\textbf{财政的研究对象和内容}：
+
+\begin{itemize}
+\tightlist
+\item
+  研究对象： 社会主义市场经济体制下的公共财政分配活动和分配关系及其规律性
+\item
+  内容： 基本理论，财政支出，财政收入，财政管理与政策
+\end{itemize}
+
+\hypertarget{ux8d22ux653fux4e0eux5176ux4ed6ux5b66ux79d1ux4e4bux95f4ux7684ux5173ux7cfb}{%
+\subsection{财政与其他学科之间的关系}\label{ux8d22ux653fux4e0eux5176ux4ed6ux5b66ux79d1ux4e4bux95f4ux7684ux5173ux7cfb}}
+
+\ldots\ldots\ldots\ldots\ldots\ldots{}
+
+\hypertarget{ux5f53ux4ee3ux8d22ux653fux70edux70b9ux95eeux9898}{%
+\subsection{当代财政热点问题}\label{ux5f53ux4ee3ux8d22ux653fux70edux70b9ux95eeux9898}}
+
+\begin{quote}
+可作为小组展示的话题选题
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  地方政府债务风险问题
+\item
+  土地财政问题
+\item
+  分税制改革问题
+\item
+  延迟退休问题
+\item
+  财政政策与货币政策协调问题
+\item
+  收入分配问题
+\item
+  供给侧结构性改革
+\item
+  PPP与投融资体质改革
+\end{itemize}
+
+\hypertarget{ux804cux80fd}{%
+\chapter{财政的职能}\label{ux804cux80fd}}
+
+\hypertarget{ux8d22ux653fux804cux80fdux6982ux8ff0}{%
+\section{财政职能概述}\label{ux8d22ux653fux804cux80fdux6982ux8ff0}}
+
+财政职能是指政府活动所固有的经济功能，其本身不以人的意志为转移。
+
+\hypertarget{ux8d22ux653fux7684ux8d44ux6e90ux914dux7f6eux804cux80fd}{%
+\subsection{财政的资源配置职能}\label{ux8d22ux653fux7684ux8d44ux6e90ux914dux7f6eux804cux80fd}}
+
+\hypertarget{ux8d44ux6e90ux914dux7f6eux7684ux542bux4e49}{%
+\subsubsection{资源配置的含义}\label{ux8d44ux6e90ux914dux7f6eux7684ux542bux4e49}}
+
+在政府的介入或干预下，财政通过自身的收支活动蔚为政府提供公共产品给予财力保障，引导资源的有效和合理利用，弥补市场的失灵和缺陷，最终实现全社会资源的最优配置的职能。
+
+\hypertarget{ux8d44ux6e90ux914dux7f6eux7684ux65b9ux5f0fux624bux6bb5}{%
+\subsubsection{资源配置的方式手段}\label{ux8d44ux6e90ux914dux7f6eux7684ux65b9ux5f0fux624bux6bb5}}
+
+\begin{itemize}
+\tightlist
+\item
+  根据社会主义市场经济条件下政府提供公共产品和公共服务的基本范围，确定财政收入占国民收入的合理比重。
+\item
+  通过对国有经济的税收、补贴等政策方面的调整，配合国务院国有资产监督委员会对国有资产的监督和调控，在国有经济产量调整、国有经济实行战略性调整的过程中，发挥国有资本为全社会提供公共产品、矫正外部效应、保护有效竞争以及在自然垄断行业中提供高效、低价产品的优势作用。
+\item
+  优化财政支出结构，保证重点支出，压缩一般支出，提高资源配置效率。
+\item
+  建立科学的财政投融资管理体系
+\item
+  政府通过支出、税收和补贴等手段，活跃民间资本、吸引外资，满足其对经济、公益和行政的需要；对资源配置和产业结构、地区经济结构进行调控
+\end{itemize}
+
+\hypertarget{ux8d22ux653fux7684ux6536ux5165ux5206ux914dux804cux80fd}{%
+\subsection{财政的收入分配职能}\label{ux8d22ux653fux7684ux6536ux5165ux5206ux914dux804cux80fd}}
+
+\hypertarget{ux6536ux5165ux5206ux914dux7684ux6db5ux4e49}{%
+\subsubsection{收入分配的涵义}\label{ux6536ux5165ux5206ux914dux7684ux6db5ux4e49}}
+
+财政通过收入再分配机制，重新调整由市场决定的收入和财富分配的格局，达到社会认可的``公平''和``正义''的分配状态。
+
+\textbf{分配关系是财政本质的最直接、最具体的集中反映}
+
+\begin{itemize}
+\tightlist
+\item
+  初次分配：国民收入直接与生产要素相关联的分配
+\item
+  再分配：再分配（也称社会转移分配），在初次分配结果的基础上各收入主体之间通过各种渠道实现现金或实物转移的一种收入再次分配过程，也是政府对要素收入进行再次调节的过程。居民和企业等各收入主体当期得到的初次分配收入依法应支付的所得税、利润税、资本收益税和定期支付的其他经常收入税。政府以此对企业和个人的初次分配收入进行调节。
+\item
+  三次分配：主要由高收入人群在自愿基础上，以募集、捐赠和资助等慈善公益方式对社会资源和社会财富进行分配，是对初次分配和再分配的有益补充，有利于缩小社会差距，实现更合理的收入分配。
+\end{itemize}
+
+\begin{quote}
+三次分配的含义
+\end{quote}
+
+\hypertarget{ux8d22ux653fux7684ux6536ux5165ux5206ux914dux529fux80fd}{%
+\subsubsection{财政的收入分配功能}\label{ux8d22ux653fux7684ux6536ux5165ux5206ux914dux529fux80fd}}
+
+分配功能是财政固有的职能，这导源于\textbf{分配关系是财政本质的最直接、最具体的集中反映，是财政首要的和最基本的职能}
+
+收入分配职能是财政存在的直接动力和基础，包括财政代表国家以政权行使者和资产所有者两种身份参与部分社会产品或过敏收入的分配职能
+
+\hypertarget{ux8d22ux653fux8c03ux8282ux6536ux5165ux7684ux65b9ux5f0fux4e0eux624bux6bb5}{%
+\subsubsection{财政调节收入的方式与手段}\label{ux8d22ux653fux8c03ux8282ux6536ux5165ux7684ux65b9ux5f0fux4e0eux624bux6bb5}}
+
+方式有直接和间接两种方式
+
+\begin{itemize}
+\tightlist
+\item
+  直接方式：即实行高额累进直接税和各种福利性转移支出，在高收入和低收入者进行收入的再分配，以实现收入公平分配的目标
+\item
+  间接方式：政府可以通过提供公共产品和公共服务的方式进行收入再分配。
+\end{itemize}
+
+其中包括税收与转移支付。
+
+\hypertarget{ux8d22ux653fux7684ux7ecfux6d4eux7a33ux5b9aux4e0eux53d1ux5c55ux804cux80fd}{%
+\subsection{财政的经济稳定与发展职能}\label{ux8d22ux653fux7684ux7ecfux6d4eux7a33ux5b9aux4e0eux53d1ux5c55ux804cux80fd}}
+
+\hypertarget{ux653fux5e9cux7684ux7ecfux6d4eux7a33ux5b9aux4e0eux53d1ux5c55ux804cux80fdux7684ux542bux4e49}{%
+\subsubsection{政府的经济稳定与发展职能的含义}\label{ux653fux5e9cux7684ux7ecfux6d4eux7a33ux5b9aux4e0eux53d1ux5c55ux804cux80fdux7684ux542bux4e49}}
+
+政府运用财政政策和货币政策以及适当的政策组合，以实现国民经济中总供给与总需求之间的平衡，并求得稳定增长的职能
+
+\hypertarget{ux5b8fux89c2ux7ecfux6d4eux8c03ux63a7ux7684ux56dbux5927ux76eeux6807}{%
+\subsubsection{宏观经济调控的四大目标}\label{ux5b8fux89c2ux7ecfux6d4eux8c03ux63a7ux7684ux56dbux5927ux76eeux6807}}
+
+\begin{itemize}
+\tightlist
+\item
+  经济增长
+\item
+  物价稳定
+\item
+  充分就业
+\item
+  国际收支平衡
+\end{itemize}
+
+\begin{quote}
+经济发展不等同于经济增长，经济发展中也包括了生产力增长的意思。
+\end{quote}
+
+\hypertarget{ux8d22ux653fux5728ux5b9eux73b0ux56dbux5927ux76eeux6807ux4e2dux7684ux4f5cux7528}{%
+\subsubsection{财政在实现四大目标中的作用}\label{ux8d22ux653fux5728ux5b9eux73b0ux56dbux5927ux76eeux6807ux4e2dux7684ux4f5cux7528}}
+
+\begin{itemize}
+\tightlist
+\item
+  通过``相机抉择''的财政政策，针对不断变化的经济形势灵活地变动支出和税收，维持总供求的大体平衡。
+\item
+  在实践中，通过财政制度性的安排，使财政发挥某种``自动稳定器''的作用
+\item
+  通过有计划地组织和调节国家预算的平衡关系并配合产业政策的实施，调节市场供求总量的评价很高，保持市场的稳定
+\item
+  通过调节社会财力分配的集中与分散的关系，以及运用共的不足，消除经济增长中的``瓶颈''
+\item
+  通过税收、财政补贴、社会保障和社会救济等财政性分配，调节社会分配不公，保持社会生活稳定，为经济和社会的发展提供和平与安定的环境。
+\end{itemize}
+
+\begin{quote}
+相机抉择：相机抉择是指政府实现宏观调整目标，保证国民经济的正常运行；根据市场情况和特点，机动灵活地采取某种宏观调控措施，进行需求管理，保证经济在合理范围内运行的一种方式。
+\end{quote}
+
+\hypertarget{ux8d22ux653fux804cux80fdux4e0eux516cux5e73ux6548ux7387ux51c6ux5219}{%
+\subsection{财政职能与公平效率准则}\label{ux8d22ux653fux804cux80fdux4e0eux516cux5e73ux6548ux7387ux51c6ux5219}}
+
+\begin{quote}
+效率一般是指投入产出比，通常被比作如何将蛋糕做大
+公平：如何将蛋糕在不同成员中进行分配。
+\end{quote}
+
+从效率优先兼顾公平到效率优先与公平并重
+
+\hypertarget{causal}{%
+\chapter{格兰格因果性}\label{causal}}
+
+\printbibliography
+
+\end{document}

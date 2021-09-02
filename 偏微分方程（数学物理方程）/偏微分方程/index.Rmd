@@ -1,0 +1,25 @@
+---
+title: "偏微分方程"
+author: "谭皓文"
+date: "2021年9月1日"
+description: "又名数学物理方程"
+documentclass: book
+biblio-style: apa
+bibliography: [mybib.bib]
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 导言 {-}
+
+偏微分方程又叫数学物理方程，是在常微分方程的基础上的更难的一门学科，其中我们会遇到许多不同的问题，和之前的常微分相比，特点为方法并不通用，并且要求一定的物理知识，如果不同的问题使用错误的方法是做不出来的。因此我们需要大量的练习。
+
+参考书：
+
+- 姜礼尚《数学物理方程》
+- 周蜀林《偏微分方程》
+
+学习内容是前五章

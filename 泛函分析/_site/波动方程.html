@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 波动方程 | chp01.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 波动方程 | chp01.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 波动方程 | chp01.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="site_libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="site_libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/SVG"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  }
+});
+</script>
+<script type="text/javascript"
+   src="../../../MathJax/MathJax.js">
+</script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path=""><a href="#波动方程"><i class="fa fa-check"></i><b>1</b> 波动方程</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#弦振动方程"><i class="fa fa-check"></i><b>1.1</b> 弦振动方程</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path=""><a href="#方程的导出定解条件"><i class="fa fa-check"></i><b>1.1.1</b> 方程的导出、定解条件</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="波动方程" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> 波动方程</h1>
+<div id="弦振动方程" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> 弦振动方程</h2>
+<div id="方程的导出定解条件" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> 方程的导出、定解条件</h3>
+<div id="弦振动方程-1" class="section level4" number="1.1.1.1">
+<h4><span class="header-section-number">1.1.1.1</span> 弦振动方程</h4>
+<p><span class="math inline">\(u(x,t)\)</span>表示每点<span class="math inline">\(x\)</span>在时刻<span class="math inline">\(t\)</span>的位移。</p>
+<p>其中我们需要做出以下假设以简化问题，因此我们做出如下假设，也叫理想假设(没有外力):</p>
+<ol style="list-style-type: decimal">
+<li>弦是均匀的，换言之则是线密度为常数，并且，直径//长度&lt;&lt;1,也就是说，直径比长度远小。这个保证弦可以看作是理想中的一条线。</li>
+<li>弦在某一平面是做微小的横振动（运动方向与传播方向垂直）。这个保证了弦没有发生巨大形变。</li>
+<li>弦是柔软的，并且张力方向与切线方向一致。也就是说满足胡克定律，张力的大小与形变大小成正比。</li>
+</ol>
+<p>我们需要了解的知识点</p>
+<ul>
+<li>牛顿第二定律：<span class="math inline">\(F=ma,Ft=mv\)</span></li>
+<li>在<span class="math inline">\((x,x + \Delta x)\)</span>上，弧长<span class="math inline">\(S = \int_{x}^{x+\Delta x} \sqrt{1+(\frac{\partial u}{\partial x})^2} dx \approx \int_{x}^{x+\Delta x} dx = \Delta x\)</span></li>
+</ul>
+<p><img src="t1.jpg" alt="力学分析示图" />
+在如上的力学分析示图中我们可以设在<span class="math inline">\(x\)</span>点处的张力<span class="math inline">\(\vec{T}(x)=\)</span>，并且<span class="math inline">\(T(x)= \lvert\vec{T}(x) \lvert\)</span>。</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>水平分力</th>
+<th>竖直分力</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x\)</span></td>
+<td><span class="math inline">\(-T(x)cos\alpha_1\)</span></td>
+<td><span class="math inline">\(-T(x)sin\alpha_1\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(x+\Delta x\)</span></td>
+<td><span class="math inline">\(T(x+\Delta x)cos\alpha_2\)</span></td>
+<td><span class="math inline">\(T(x+\Delta x)sin\alpha_2\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="site_libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="site_libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
